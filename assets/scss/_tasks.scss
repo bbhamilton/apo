@@ -1,0 +1,111 @@
+
+.tasks {
+  background-image: url('../images/tasks_bg.jpg');
+
+  &__title {
+    font-family: "Poppins-bold", sans-serif;
+    font-size: 35px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__new, &__active {
+    padding-top: 50px;
+  }
+
+  .task {
+
+    &__description {
+
+      flex: 3;
+
+      h3 {
+
+      }
+
+      p {
+        margin: 10px 0;
+        text-align: left;
+      }
+
+    }
+
+    &__start {
+      strong, em {
+        text-align: center;
+        display: block;
+      }
+
+      strong {
+        font-family: "Poppins-medium", sans-serif;
+        font-size: 18px;
+        margin: 18px 0 7px;
+      }
+
+      em {
+        font-size: 10px;
+        color: #A48608;
+      }
+    }
+
+    &__prize, &__life-counter {
+
+      h4 {
+        margin-bottom: 15px;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      .points-counter {
+        margin-bottom: 8px;
+      }
+
+    }
+
+    &__action-button {
+
+    }
+
+    > ul {
+      display: flex;
+      width: 100%;
+
+      > li {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        height: 120px;
+        padding: 20px 40px;
+        margin: 40px 0 0;
+      }
+
+      > li:last-child {
+        border-right: 1px solid #333;
+        padding-left: 50px;
+      }
+    }
+
+    .lifes {
+      display: flex;
+
+      &__life {
+        margin-right: 6px;
+        height: 18px;
+      }
+
+
+    }
+
+    &__description {
+
+    }
+
+  }
+
+}

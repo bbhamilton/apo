@@ -1,0 +1,42 @@
+
+.pevex {
+  background-image: url('../images/pevex-bg.jpg');
+  height: 365px;
+  display: flex;
+  align-items: center;
+
+  &__persona {
+    width: 800px;
+
+    h3 {
+      font-size: 10px;
+      color: #EABF06;
+      margin-bottom: 12px;
+    }
+
+    h4 {
+      font-family: "Poppins-bold", sans-serif;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+  }
+
+  .center-section {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    height: 150px;
+    margin-right: 20px;
+  }
+
+}

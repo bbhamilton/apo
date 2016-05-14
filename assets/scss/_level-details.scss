@@ -1,0 +1,126 @@
+
+.level-details {
+  background-image: url('../images/level_bg.jpg');
+  height: 376px;
+  display: flex;
+
+  .center-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .team-avatar {
+
+    width: 200px;
+    border-right: 1px solid #514B45;
+    padding-right: 40px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__avatar {
+      width: 120px;
+    }
+
+    &__title {
+      display: block;
+      font-family: "Poppins-medium", sans-serif;
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    &__counter {
+      display: block;
+      font-size: 11px;
+      color: #999;
+      margin-bottom: 15px;
+
+      span {
+        color: #E7BD07;
+      }
+    }
+
+    &__points-counter {
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+      span {
+        margin-left: 6px;
+        font-size: 11px;
+        font-family: "Poppins-medium", sans-serif;
+      }
+    }
+
+  }
+
+  .level-info {
+    padding-left: 40px;
+
+    &__levels {
+      display: flex;
+    }
+
+    &__current {
+      flex: 1;
+
+      h2 {
+        color: #EABF06;
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-family: 'Poppins-bold', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+
+    }
+
+    &__next {
+      flex: 1;
+      text-align: right;
+
+      h2 {
+        font-size: 10px;
+        color: #949494;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 30px;
+        color: #999;
+        font-family: 'Poppins-bold', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+      }
+
+    }
+
+    &__description {
+
+      h4 {
+        color: #838383;
+        font-size: 10px;
+        padding: 15px 0;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 1.7em;
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+
+
+
+
+}

@@ -1,0 +1,35 @@
+
+.hr {
+  border-top: 1px solid #555759;
+  border-bottom: 1px solid #555759;
+  background-color: #272B2D;
+  height: 9px;
+}
+
+.center-section {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-transform: uppercase;;
+  font-size: 11px;
+  margin-right: 14px;
+  padding: 5px 20px;
+  border: 2px solid #8F9395;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+
+  &:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+  }
+
+  &--current {
+    @extend .btn;
+    border: 2px solid #E8BE05;
+
+  }
+
+}
