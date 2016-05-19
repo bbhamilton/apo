@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router-deprecated';
 
 import { PevexComponent } from './pevex/pevex.component';
 import { ProductsComponent } from './products/products.component';
 
 
 @Component({
-    directives: [PevexComponent, ProductsComponent, ROUTER_DIRECTIVES],
+    directives: [PevexComponent, ProductsComponent],
     template: `
       <pevex></pevex>
       <products></products>

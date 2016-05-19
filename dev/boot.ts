@@ -5,5 +5,5 @@ import { ROUTER_PROVIDERS } from '@angular/router-deprecated';
 import { AppComponent } from './app.component';
 
 bootstrap(AppComponent, [
-  ROUTER_PROVIDERS
+  ROUTER_PROVIDERS,
 ]);
