@@ -1,8 +1,10 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router-deprecated';
 
 @Component({
+  directives: [ROUTER_DIRECTIVES],
   selector: 'pevex',
-  templateUrl: 'dist/pevex.component.html'
+  templateUrl: 'app/pevex/pevex.component.html'
 })
 
 export class PevexComponent {

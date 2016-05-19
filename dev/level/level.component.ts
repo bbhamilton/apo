@@ -1,10 +1,10 @@
-import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {Component} from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router-deprecated';
 
 @Component({
+  directives: [ROUTER_DIRECTIVES],
   selector: 'level',
-  templateUrl: 'dist/level.component.html',
-  directives: [ROUTER_DIRECTIVES]
+  templateUrl: 'app/level/level.component.html'
 })
 
 export class LevelComponent {

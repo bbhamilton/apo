@@ -1,9 +1,10 @@
 import {Component} from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router-deprecated';
 
 @Component({
+  directives: [ROUTER_DIRECTIVES],
   selector: 'header-component',
-  templateUrl: 'dev/header/header.component.html',
-  style: 'body { border-top: 5px solid red; }'
+  templateUrl: 'app/header/header.component.html',
 })
 
 export class HeaderComponent {

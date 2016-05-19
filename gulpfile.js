@@ -17,6 +17,21 @@ var typescript = require('gulp-typescript');
 
 var tsProject = typescript.createProject('tsconfig.json');
 
+gulp.task('build-images', function () {
+    return gulp.src(assetsDev + 'images/*.{jpg,png,gif}')
+      .pipe(gulp.dest(assetsProd + 'images/'));
+});
+
+gulp.task('build-fonts', function () {
+    return gulp.src(assetsDev + 'fonts/*.woff')
+      .pipe(gulp.dest(assetsProd + 'fonts/'));
+});
+
+gulp.task('build-htmls', function () {
+    return gulp.src(appDev + '**/*.html')
+      .pipe(gulp.dest(appProd));
+});
+
 gulp.task('build-css', function () {
     return gulp.src(assetsDev + 'scss/*.scss')
         .pipe(sourcemaps.init())
@@ -63,4 +78,6 @@ gulp.task('watch', function () {
     gulp.watch(assetsDev + 'scss/**/*.scss', ['build-css']);
 });
 
-gulp.task('default', ['watch', 'build-ts', 'bundle-ts', 'build-css']);
+gulp.task('assets', ['build-images', 'build-fonts']);
+
+gulp.task('default', ['watch', 'build-htmls', 'build-ts', 'bundle-ts', 'build-css']);
