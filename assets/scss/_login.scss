@@ -1,0 +1,51 @@
+.playlyfe_loginpage {
+  height: 100%;
+  background: url('../images/loginscreen.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.playlyfe_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -120px;
+  width: 256px;
+  height: 90px;
+
+  .apocalypternet_logo {
+    padding-bottom: 20px;
+  }
+
+}
+.playlyfe_btn {
+  display: block;
+  width: 256px;
+  height: 36px;
+  border: 2px solid #F2DB2F;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 9px;
+
+  &:hover {
+    background-color: #F2DB2F;
+    color: #000;
+  }
+
+  &__icon {
+    float: left;
+  }
+
+  &__label {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+}

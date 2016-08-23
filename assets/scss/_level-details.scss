@@ -1,7 +1,7 @@
 
 .level-details {
-  background-image: url('../images/level_bg.jpg');
-  height: 376px;
+  background-image: url('../images/level.png');
+  height: 450px;
   display: flex;
 
   .center-section {
@@ -11,12 +11,13 @@
 
   .team-avatar {
 
-    width: 200px;
+    width: 300px;
     border-right: 1px solid #514B45;
     padding-right: 40px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 290px;
 
     &__avatar {
       width: 120px;
@@ -73,7 +74,7 @@
       }
 
       h3 {
-        font-size: 30px;
+        font-size: 21px;
         font-family: 'Poppins-bold', sans-serif;
         text-transform: uppercase;
         margin-bottom: 30px;
@@ -92,7 +93,7 @@
       }
 
       h3 {
-        font-size: 30px;
+        font-size: 21px;
         color: #999;
         font-family: 'Poppins-bold', sans-serif;
         text-transform: uppercase;
@@ -118,7 +119,6 @@
     }
 
   }
-
 
 
 

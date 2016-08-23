@@ -79,12 +79,10 @@ body {
   display: flex;
 
   &__done {
-    width: 70%;
     background-color: #E9BF05;
     height: 6px;
 
     &--circled {
-      width: 70%;
       background-color: #E9BF05;
       border-radius: 10px 0 0 10px;
       height: 12px;
@@ -94,12 +92,10 @@ body {
   }
 
   &__notdone {
-    width: 30%;
     background-color: #454545;
     height: 6px;
 
     &--circled {
-      width: 30%;
       background-color: #454545;
       border-radius: 0 10px 10px 0;
       height: 12px;

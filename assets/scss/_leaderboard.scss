@@ -1,7 +1,6 @@
 
 .leaderboard {
-  background-image: url('../images/leaderboard_bg.jpg');
-  height: 681px;
+  background-image: url('../images/ranking2.png');
 
   &__title {
 
@@ -17,8 +16,8 @@
     border-top: 1px solid #333;
 
     &__element {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       display: flex;
       align-items: center;
       border-bottom: 1px solid #333;
@@ -31,6 +30,7 @@
       .avatar {
         height: 83px;
         padding-left: 10px;
+        flex: 1 0 0;
 
         img {
           height: 70px;
@@ -43,7 +43,7 @@
 
     &__middle-column {
       padding-left: 30px;
-      width: 700px;
+      flex: 8 0 0;
     }
 
     &__username {
@@ -64,6 +64,7 @@
     }
 
     &__last-column {
+      flex: 1 0 0;
 
       div {
         display: flex;
