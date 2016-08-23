@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { TasksComponent } from './tasks/tasks.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,7 +24,7 @@ export class TasksPageComponent implements OnInit {
     }
 
     ngOnInit():any {
-      this.a_token = localStorage.getItem('access_token'));
+      this.a_token = localStorage.getItem('access_token');
 
     }
 

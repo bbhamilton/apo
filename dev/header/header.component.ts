@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
   constructor(private _playlyfeService: PlaylyfeService) {}
 
   ngOnInit():any {
-    this.a_token = localStorage.getItem('access_token'));
+    this.a_token = localStorage.getItem('access_token');
 
     this._playlyfeService.getPlayerProfile(this.a_token)
       .subscribe(
@@ -41,15 +41,15 @@ export class HeaderComponent implements OnInit {
 
         },
         error => console.error(error),
-        () => console.log(JSON.stringify(this.player_profile_json));
+        () => console.log(JSON.stringify(this.player_profile_json))
       );
 
       var route = /app|pevex|tasks|profile/.exec(window.location.href);
 
-      if(route == 'app') { this.routeLeaderboard = true; }
-      else if (route == 'pevex') { this.routePevex = true; }
-      else if (route == 'profile') { this.routeProfile = true; }
-      else if (route == 'tasks') { this.routeTasks = true; }
+      if("" + route == 'app') { this.routeLeaderboard = true; }
+      else if ("" + route == 'pevex') { this.routePevex = true; }
+      else if ("" + route == 'profile') { this.routeProfile = true; }
+      else if ("" + route == 'tasks') { this.routeTasks = true; }
 
   }
 

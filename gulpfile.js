@@ -11,6 +11,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var cssClean = require('gulp-clean-css');
+var concat = require('gulp-concat');
 
 /* JS & TS */
 var typescript = require('gulp-typescript');
@@ -73,6 +74,21 @@ gulp.task('bundle-ts', ['build-ts'], function() {
         });
 });
 
+gulp.task('bundle:vendor', function () {
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/es6-shim/es6-shim.min.js',
+        'node_modules/es6-promise/dist/es6-promise.min.js',
+        'node_modules/zone.js/dist/zone.js',
+        'node_modules/reflect-metadata/Reflect.js',
+        'node_modules/systemjs/dist/system-polyfills.js',
+        'node_modules/systemjs/dist/system.src.js',
+      ])
+        .pipe(concat('vendors.js'))
+        .pipe(gulp.dest(appProd));
+});
+
 gulp.task('watch', function () {
     gulp.watch(appDev + '**/*.ts', ['build-ts']);
     gulp.watch(appDev + '**/*.html', ['build-htmls']);
@@ -81,4 +97,4 @@ gulp.task('watch', function () {
 
 gulp.task('assets', ['build-images', 'build-fonts']);
 
-gulp.task('default', ['watch', 'build-htmls', 'build-ts', 'bundle-ts', 'build-css']);
+gulp.task('default', ['watch', 'build-htmls', 'build-ts', 'bundle-ts', 'build-css', 'bundle:vendor']);

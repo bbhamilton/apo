@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES, RouteConfig, RouteParams, Router } from '@angular/router-deprecated';
 
 import { LoginComponent } from './login.component';

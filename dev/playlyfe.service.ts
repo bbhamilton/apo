@@ -15,7 +15,7 @@ export class PlaylyfeService {
 // --- getters
 
   getGameName():string {
-    return this.gameinfo.name;
+    return null;
   }
 
   getPlayerName():string {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { PevexComponent } from './pevex/pevex.component';
 import { ProductsComponent } from './products/products.component';
@@ -23,7 +23,7 @@ export class PevexPageComponent implements OnInit {
     }
 
     ngOnInit():any {
-      this.a_token = localStorage.getItem('access_token'));
+      this.a_token = localStorage.getItem('access_token');
     }
 
 }

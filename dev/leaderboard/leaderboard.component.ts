@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PlaylyfeService } from './../playlyfe.service';
 
 @Component({
@@ -15,7 +15,7 @@ export class LeaderboardComponent implements OnInit {
 
   ngOnInit():any {
 
-    this.a_token = localStorage.getItem('access_token'));
+    this.a_token = localStorage.getItem('access_token');
 
     this._playlyfeService.getPlayers(this.a_token)
       .subscribe(

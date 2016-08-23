@@ -16,7 +16,7 @@ export class LevelComponent implements OnInit {
   constructor(private _playlyfeService: PlaylyfeService) {}
 
   ngOnInit():any {
-    this.a_token = localStorage.getItem('access_token'));
+    this.a_token = localStorage.getItem('access_token');
     this._playlyfeService.getPlayers(this.a_token)
       .subscribe(
         data => {
