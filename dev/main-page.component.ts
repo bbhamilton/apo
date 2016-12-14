@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RouteParams } from '@angular/router-deprecated';
 
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
-import { LevelComponent } from './level/level.component';
 import { HeaderComponent } from './header/header.component';
+import { LevelComponent } from './level/level.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 @Component({
     directives: [HeaderComponent, LevelComponent, LeaderboardComponent],

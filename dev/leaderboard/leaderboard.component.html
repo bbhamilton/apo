@@ -6,9 +6,9 @@
     </p>
     {{ info }}
     <ul *ngIf="JSONdata" class="leaderboard-list">
-      <li  *ngFor="let items of JSONdata.data | slice:0:9;" class="leaderboard-list__element">
+      <li  *ngFor="let items of JSONdata.data | slice:0:10;" class="leaderboard-list__element">
         <div class="avatar">
-          <img src="src/images/av1.png" alt="av1" />
+          <img src="https://api.playlyfe.com/v2/runtime/assets/players/{{ items.player.id }}?access_token={{ a_token }}" class="rounded" alt="av1" />
         </div>
 
         <div class="leaderboard-list__middle-column">

@@ -21,13 +21,12 @@ export class LoginComponent {
   a_token: string = null;
   playlyfe_id: string;
   // production env
-  client_id = 'MTI4OTkxNWQtNDMzMi00NDQwLWE2OWEtYmY3ZGVhYmNkYmMz';
+  client_id = 'OGI4ZmNmMzQtZGU2Zi00YzkxLTk4NmEtOTI2MWVhNGY3YjYx';
   // testing env
-  // client_id = 'MmJmNThhYzctZGVlYi00MDI4LWEzOGUtYTYzZTNhYWZlMTg0';
-  redirect_uri = 'http://localhost:3000/';
+  //client_id = 'MmJmNThhYzctZGVlYi00MDI4LWEzOGUtYTYzZTNhYWZlMTg0';
+  // redirect_uri = 'http://bilicki.stronazen.pl/apo';
+  redirect_uri = 'http://localhost:3000';
 
-  constructor(private _httpService: PlaylyfeService) {
-
-  }
+  constructor(private _httpService: PlaylyfeService) {}
 
 }

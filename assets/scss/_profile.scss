@@ -1,9 +1,24 @@
-
-.pevex {
-  background-image: url('../images/pevex.jpg');
+.profile {
+  background-image: url('../images/ranking2.jpg');
   min-height: 500px;
   display: flex;
   align-items: center;
+
+  &__badges {
+    list-style: none;
+    display: inline;
+
+    li {
+      float: left;
+
+      img {
+        height: 60px;
+        margin-right: 10px;
+        margin-top: 20px
+      }
+    }
+
+  }
 
   &__persona {
     width: 800px;

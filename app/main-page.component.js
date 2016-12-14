@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/router-deprecated', './leaderboard/leaderboard.component', './level/level.component', './header/header.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router-deprecated', './header/header.component', './level/level.component', './leaderboard/leaderboard.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/router-deprecated', './leaderboard/l
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_deprecated_1, leaderboard_component_1, level_component_1, header_component_1;
+    var core_1, router_deprecated_1, header_component_1, level_component_1, leaderboard_component_1;
     var MainPageComponent;
     return {
         setters:[
@@ -20,14 +20,14 @@ System.register(['@angular/core', '@angular/router-deprecated', './leaderboard/l
             function (router_deprecated_1_1) {
                 router_deprecated_1 = router_deprecated_1_1;
             },
-            function (leaderboard_component_1_1) {
-                leaderboard_component_1 = leaderboard_component_1_1;
+            function (header_component_1_1) {
+                header_component_1 = header_component_1_1;
             },
             function (level_component_1_1) {
                 level_component_1 = level_component_1_1;
             },
-            function (header_component_1_1) {
-                header_component_1 = header_component_1_1;
+            function (leaderboard_component_1_1) {
+                leaderboard_component_1 = leaderboard_component_1_1;
             }],
         execute: function() {
             MainPageComponent = (function () {
@@ -52,4 +52,4 @@ System.register(['@angular/core', '@angular/router-deprecated', './leaderboard/l
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4tcGFnZS5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFnQkE7Z0JBR0UsMkJBQW9CLFlBQXlCO29CQUF6QixpQkFBWSxHQUFaLFlBQVksQ0FBYTtvQkFGN0MsWUFBTyxHQUFXLElBQUksQ0FBQztnQkFFeUIsQ0FBQztnQkFFakQsb0NBQVEsR0FBUjtvQkFDRSxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBQyxDQUFDO2dCQUN2RCxDQUFDO2dCQWhCSDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFVBQVUsRUFBRSxDQUFDLGtDQUFlLEVBQUUsZ0NBQWMsRUFBRSw0Q0FBb0IsQ0FBQzt3QkFDbkUsUUFBUSxFQUFFLCtHQUlUO3FCQUNKLENBQUM7O3FDQUFBO2dCQVdGLHdCQUFDO1lBQUQsQ0FUQSxBQVNDLElBQUE7WUFURCxpREFTQyxDQUFBIiwiZmlsZSI6Im1haW4tcGFnZS5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIE9uSW5pdCwgSW5wdXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IFJvdXRlUGFyYW1zIH0gZnJvbSAnQGFuZ3VsYXIvcm91dGVyLWRlcHJlY2F0ZWQnO1xuXG5pbXBvcnQgeyBMZWFkZXJib2FyZENvbXBvbmVudCB9IGZyb20gJy4vbGVhZGVyYm9hcmQvbGVhZGVyYm9hcmQuY29tcG9uZW50JztcbmltcG9ydCB7IExldmVsQ29tcG9uZW50IH0gZnJvbSAnLi9sZXZlbC9sZXZlbC5jb21wb25lbnQnO1xuaW1wb3J0IHsgSGVhZGVyQ29tcG9uZW50IH0gZnJvbSAnLi9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudCc7XG5cbkBDb21wb25lbnQoe1xuICAgIGRpcmVjdGl2ZXM6IFtIZWFkZXJDb21wb25lbnQsIExldmVsQ29tcG9uZW50LCBMZWFkZXJib2FyZENvbXBvbmVudF0sXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgIDxoZWFkZXItY29tcG9uZW50PjwvaGVhZGVyLWNvbXBvbmVudD5cbiAgICAgIDxsZXZlbD48L2xldmVsPlxuICAgICAgPGxlYWRlcmJvYXJkPjwvbGVhZGVyYm9hcmQ+XG4gICAgYFxufSlcblxuZXhwb3J0IGNsYXNzIE1haW5QYWdlQ29tcG9uZW50IGltcGxlbWVudHMgT25Jbml0IHtcbiAgYV90b2tlbjogc3RyaW5nID0gbnVsbDtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIF9yb3V0ZVBhcmFtczogUm91dGVQYXJhbXMpIHt9XG5cbiAgbmdPbkluaXQoKTphbnkge1xuICAgIHRoaXMuYV90b2tlbiA9IHRoaXMuX3JvdXRlUGFyYW1zLmdldCgnYWNjZXNzX3Rva2VuJyk7XG4gIH1cblxufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4tcGFnZS5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFnQkE7Z0JBR0UsMkJBQW9CLFlBQXlCO29CQUF6QixpQkFBWSxHQUFaLFlBQVksQ0FBYTtvQkFGN0MsWUFBTyxHQUFXLElBQUksQ0FBQztnQkFFeUIsQ0FBQztnQkFFakQsb0NBQVEsR0FBUjtvQkFDRSxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBQyxDQUFDO2dCQUN2RCxDQUFDO2dCQWhCSDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFVBQVUsRUFBRSxDQUFDLGtDQUFlLEVBQUUsZ0NBQWMsRUFBRSw0Q0FBb0IsQ0FBQzt3QkFDbkUsUUFBUSxFQUFFLCtHQUlUO3FCQUNKLENBQUM7O3FDQUFBO2dCQVdGLHdCQUFDO1lBQUQsQ0FUQSxBQVNDLElBQUE7WUFURCxpREFTQyxDQUFBIiwiZmlsZSI6Im1haW4tcGFnZS5jb21wb25lbnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIE9uSW5pdCwgSW5wdXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IFJvdXRlUGFyYW1zIH0gZnJvbSAnQGFuZ3VsYXIvcm91dGVyLWRlcHJlY2F0ZWQnO1xuXG5pbXBvcnQgeyBIZWFkZXJDb21wb25lbnQgfSBmcm9tICcuL2hlYWRlci9oZWFkZXIuY29tcG9uZW50JztcbmltcG9ydCB7IExldmVsQ29tcG9uZW50IH0gZnJvbSAnLi9sZXZlbC9sZXZlbC5jb21wb25lbnQnO1xuaW1wb3J0IHsgTGVhZGVyYm9hcmRDb21wb25lbnQgfSBmcm9tICcuL2xlYWRlcmJvYXJkL2xlYWRlcmJvYXJkLmNvbXBvbmVudCc7XG5cbkBDb21wb25lbnQoe1xuICAgIGRpcmVjdGl2ZXM6IFtIZWFkZXJDb21wb25lbnQsIExldmVsQ29tcG9uZW50LCBMZWFkZXJib2FyZENvbXBvbmVudF0sXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgIDxoZWFkZXItY29tcG9uZW50PjwvaGVhZGVyLWNvbXBvbmVudD5cbiAgICAgIDxsZXZlbD48L2xldmVsPlxuICAgICAgPGxlYWRlcmJvYXJkPjwvbGVhZGVyYm9hcmQ+XG4gICAgYFxufSlcblxuZXhwb3J0IGNsYXNzIE1haW5QYWdlQ29tcG9uZW50IGltcGxlbWVudHMgT25Jbml0IHtcbiAgYV90b2tlbjogc3RyaW5nID0gbnVsbDtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIF9yb3V0ZVBhcmFtczogUm91dGVQYXJhbXMpIHt9XG5cbiAgbmdPbkluaXQoKTphbnkge1xuICAgIHRoaXMuYV90b2tlbiA9IHRoaXMuX3JvdXRlUGFyYW1zLmdldCgnYWNjZXNzX3Rva2VuJyk7XG4gIH1cblxufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

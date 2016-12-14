@@ -11,18 +11,22 @@ export class LeaderboardComponent implements OnInit {
   a_token: string;
   JSONdata;
 
-  constructor(private _playlyfeService: PlaylyfeService) {}
+  constructor(private _playlyfeService: PlaylyfeService) {
+
+
+  }
 
   ngOnInit():any {
 
     this.a_token = localStorage.getItem('access_token');
 
     this._playlyfeService.getPlayers(this.a_token)
-      .subscribe(
-        data => this.JSONdata = data,
-        error => console.error(error),
-        () => console.log(this.JSONdata)
-      );
+    .subscribe(
+      data => this.JSONdata = data,
+      error => console.error(error),
+      () => console.dir(this.JSONdata)
+    );
+
   }
 
 }

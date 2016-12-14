@@ -1,7 +1,9 @@
 
 .tasks {
-  background-image: url('../images/ranking2.png');
+  background-image: url('../images/ranking2.jpg');
   background-repeat: no-repeat;
+  min-height: 1000px;
+  padding-bottom: 40px;
 
   &__title {
     font-family: "Poppins-bold", sans-serif;
@@ -23,7 +25,7 @@
       flex: 3;
 
       h3 {
-
+        font-size: 12px;
       }
 
       p {
@@ -51,7 +53,7 @@
       }
     }
 
-    &__prize, &__life-counter {
+    &__prize {
 
       h4 {
         margin-bottom: 15px;
@@ -63,6 +65,18 @@
 
       .points-counter {
         margin-bottom: 8px;
+      }
+
+    }
+
+    &__badge {
+
+      h4 {
+        margin-bottom: 15px;
+      }
+
+      img {
+        width: 50px;
       }
 
     }

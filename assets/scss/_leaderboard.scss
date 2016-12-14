@@ -1,6 +1,7 @@
 
 .leaderboard {
-  background-image: url('../images/ranking2.png');
+  background-image: url('../images/ranking2.jpg');
+  min-height: 500px;
 
   &__title {
 
@@ -34,7 +35,9 @@
 
         img {
           height: 70px;
-          padding-top: 12px;
+          width: 70px;
+          margin-top: 12px;
+          border-radius: 100%;
         }
 
       }

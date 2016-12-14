@@ -1,3 +1,17 @@
-<section>
-  <h1>tu będzie profil</h1>
+<section class="profile">
+  <div class="center-section">
+    <img src="https://api.playlyfe.com/v2/runtime/assets/players/{{ player_id }}?access_token={{ a_token }}" alt="{{ player_name }}" class="rounded" />
+    <div class="pevex__persona">
+      <h3>Player</h3>
+      <h4>{{ player_name }}</h4>
+      <h5 class="h1-desc floated-line">Your badges</h5>
+      <div *ngIf="player_scores" >
+        <ul *ngFor="let score of player_scores" class="profile__badges">
+          <li>
+            <img src="https://api.playlyfe.com/v2/runtime/assets/definitions/metrics/badges?access_token={{ a_token }}&item={{ score.name }}" alt="badge" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>

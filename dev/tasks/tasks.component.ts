@@ -12,9 +12,7 @@ export class TasksComponent implements OnInit {
   a_token;
   actions_json;
 
-  constructor(private _playlyfeService: PlaylyfeService, private _router: Router) {
-
-  }
+  constructor(private _playlyfeService: PlaylyfeService, private _router: Router) {}
 
   ngOnInit():any {
     this.a_token = localStorage.getItem('access_token');
@@ -27,6 +25,22 @@ export class TasksComponent implements OnInit {
         error => console.error(error),
         () => console.log(this.actions_json)
       );
+
+  }
+
+  getMetric(metrics, metric):number {
+    console.log(metric);
+    console.dir(metrics);
+    if (typeof metrics[0] !== 'undefined' && metrics[0].metric.name == metric) {
+      return metrics[0].value;
+    } else if (typeof metrics[1] !== 'undefined' && metrics[1].metric.name == metric) {
+      return metrics[1].value;
+    } else if (typeof metrics[2] !== 'undefined' && metrics[2].metric.name == metric) {
+      return metrics[2].value;
+    } else {
+      return 0;
+    }
+
 
   }
 
